@@ -1,0 +1,14 @@
+name: BRIDGE-7 Core Sync
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm
+        run: |
+          echo "BRIDGE-7 CORE ACTIVE"
+          echo "Sysia = rdzeń"
+          echo "Navi = kernel"
