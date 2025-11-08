@@ -1,0 +1,19 @@
+name: BRIDGE-7 Core Sync
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log
+        run: |
+          echo "BRIDGE-7 ACTIVE"
+          echo "Owner: Sysia"
+          echo "Kernel: Navi"
